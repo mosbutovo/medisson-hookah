@@ -37,9 +37,10 @@
     }
 
     .container {
-      max-width: 1400px;
+      width: 90%;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 0 20px;
     }
 
     /* Типография */
@@ -59,6 +60,7 @@
       margin-bottom: 3rem;
       position: relative;
       padding-bottom: 1.5rem;
+      text-align: center;
     }
 
     h2::after {
@@ -75,9 +77,8 @@
 
     /* Хедер */
     .header {
-      height: 100vh;
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
-                  url(assets/img/hero.webp) center/cover no-repeat;
+      min-height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
       display: flex;
       align-items: center;
       text-align: center;
@@ -89,7 +90,7 @@
       width: 100%;
       max-width: 900px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 0 20px;
     }
 
     .lead {
@@ -149,59 +150,10 @@
 
     /* Секции */
     .section {
-      padding: 8rem 0;
-      text-align: center;
+      padding: 6rem 0;
     }
 
-    .section-content {
-      margin-top: 4rem;
-    }
-
-    /* Карточки */
-    .card {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-      background: var(--white);
-      border-radius: 20px;
-      padding: 3rem;
-      margin-bottom: 4rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-
-    .card:hover img {
-      transform: scale(1.03);
-    }
-
-    .card-content {
-      text-align: left;
-    }
-
-    .card-content h3 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .card-content p {
-      font-size: 1.1rem;
-      color: var(--text-light);
-      line-height: 1.8;
-    }
-
-    /* Features */
+    /* Преимущества */
     .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -215,6 +167,7 @@
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
       transition: transform 0.3s;
+      text-align: center;
     }
 
     .feature:hover {
@@ -233,6 +186,29 @@
 
     .feature p {
       color: var(--text-light);
+    }
+
+    /* Информационные блоки */
+    .info-block {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 3rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .info-block h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary);
+    }
+
+    .info-block p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 2rem;
     }
 
     /* Кнопки */
@@ -268,8 +244,8 @@
       background: linear-gradient(135deg, var(--secondary) 0%, #1a1d1e 100%);
       color: var(--white);
       border-radius: 30px;
-      padding: 4rem 2rem;
-      margin-top: 4rem;
+      padding: 4rem;
+      text-align: center;
     }
 
     .contacts h2::after {
@@ -300,33 +276,41 @@
       margin-top: 4rem;
     }
 
+    /* Плавающая кнопка */
+    .floating-button {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 99;
+      padding: 1rem 2rem;
+      box-shadow: 0 5px 20px rgba(231, 76, 60, 0.3);
+    }
+
     /* Медиа запросы */
-    @media (max-width: 992px) {
-      .card {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 2rem;
-      }
-
-      .card-content {
-        text-align: center;
-      }
-
+    @media (max-width: 768px) {
       .nav ul {
         flex-direction: column;
         padding: 1rem 0;
         gap: 1rem;
+        text-align: center;
       }
-    }
 
-    @media (max-width: 768px) {
       .section {
         padding: 4rem 0;
       }
 
+      .container {
+        padding: 0 15px;
+      }
+
       .contacts {
-        border-radius: 20px;
         padding: 3rem 1.5rem;
+      }
+
+      .floating-button {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.8rem 1.5rem;
       }
     }
 
@@ -347,7 +331,7 @@
     <div class="header-content">
       <h1>Премиальная кальянная<br>в Москве</h1>
       <p class="lead">Medisson — атмосферное пространство для ценителей кальянной культуры. Изысканные вкусы, профессиональные мастера и первоклассный сервис в самом сердце столицы.</p>
-      <a href="#booking" class="btn">Забронировать стол</a>
+      <a href="https://medisson.ru" class="btn" target="_blank" rel="noopener">Забронировать стол</a>
     </div>
   </header>
 
@@ -355,7 +339,6 @@
     <ul>
       <li><a href="#about">О нас</a></li>
       <li><a href="#features">Преимущества</a></li>
-      <li><a href="#flavors">Вкусы</a></li>
       <li><a href="#vip">VIP‑залы</a></li>
       <li><a href="#contacts">Контакты</a></li>
     </ul>
@@ -364,14 +347,10 @@
   <section class="section" id="about">
     <div class="container">
       <h2>Лучшая кальянная в Москве</h2>
-      <div class="section-content">
-        <div class="card">
-          <img src="assets/img/lounge.webp" alt="Интерьер премиальной кальянной Medisson">
-          <div class="card-content">
-            <h3>Атмосфера роскоши и комфорта</h3>
-            <p>Добро пожаловать в Medisson — место, где создается особая атмосфера для вашего отдыха. Просторные залы с панорамными окнами, стильный интерьер и внимание к каждой детали создают идеальное пространство для отдыха в самом сердце Москвы.</p>
-          </div>
-        </div>
+      <div class="info-block">
+        <h3>Атмосфера роскоши и комфорта</h3>
+        <p>Добро пожаловать в Medisson — место, где создается особая атмосфера для вашего отдыха. Просторные залы с панорамными окнами, стильный интерьер и внимание к каждой детали создают идеальное пространство для отдыха в самом сердце Москвы.</p>
+        <a href="https://medisson.ru" class="btn" target="_blank" rel="noopener">Посетить нас</a>
       </div>
     </div>
   </section>
@@ -404,32 +383,13 @@
     </div>
   </section>
 
-  <section class="section" id="flavors">
-    <div class="container">
-      <h2>Премиальные вкусы</h2>
-      <div class="section-content">
-        <div class="card">
-          <img src="assets/img/flavors.webp" alt="Премиальные табаки для кальяна">
-          <div class="card-content">
-            <h3>Более 40 авторских вкусов</h3>
-            <p>Мы работаем только с лучшими брендами: Dark Side, Must Have, Tangiers. Наши мастера создают уникальные миксы и подбирают вкусы под ваши предпочтения. От классических фруктовых до эксклюзивных авторских композиций.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="section" id="vip">
     <div class="container">
       <h2>VIP-залы премиум класса</h2>
-      <div class="section-content">
-        <div class="card">
-          <img src="assets/img/vip.webp" alt="VIP кальянная комната">
-          <div class="card-content">
-            <h3>Приватное пространство</h3>
-            <p>Роскошные VIP-комнаты с отдельным входом и персональным обслуживанием. Идеальное место для особых случаев, деловых встреч или уединенного отдыха. Каждый зал оборудован системой вентиляции последнего поколения и профессиональной аудиосистемой.</p>
-          </div>
-        </div>
+      <div class="info-block">
+        <h3>Приватное пространство</h3>
+        <p>Роскошные VIP-комнаты с отдельным входом и персональным обслуживанием. Идеальное место для особых случаев, деловых встреч или уединенного отдыха. Каждый зал оборудован системой вентиляции последнего поколения и профессиональной аудиосистемой.</p>
+        <a href="https://medisson.ru" class="btn" target="_blank" rel="noopener">Забронировать VIP-зал</a>
       </div>
     </div>
   </section>
@@ -444,7 +404,7 @@
           <p><strong>Метро:</strong> Бульвар Дмитрия Донского / Улица Старокачаловская</p>
           <p><strong>Телефон:</strong> <a href="tel:+79689680002">+7 968 968‑00‑02</a></p>
         </div>
-        <a class="btn secondary" href="https://yandex.ru/maps/org/medisson/127520054492/" target="_blank" rel="noopener">Построить маршрут</a>
+        <a class="btn secondary" href="https://medisson.ru" target="_blank" rel="noopener">Посетить сайт</a>
       </div>
     </div>
   </section>
@@ -454,6 +414,8 @@
       <p>© 2025 Medisson — Премиальная кальянная в Москве · Все права защищены</p>
     </div>
   </footer>
+
+  <a href="https://medisson.ru" class="btn floating-button" target="_blank" rel="noopener">Забронировать</a>
 
   <script>
     // Скрытие навигации при прокрутке
@@ -483,7 +445,7 @@
       threshold: 0.1
     });
 
-    document.querySelectorAll('.section-content, .features, .contacts').forEach((el) => {
+    document.querySelectorAll('.section, .info-block, .feature').forEach((el) => {
       observer.observe(el);
     });
   </script>
