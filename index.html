@@ -2,114 +2,490 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Кальянная Medisson — Северное Бутово, Москва | Hookah & Lounge</title>
-  <meta name="description" content="Medisson — кальянная и gastro lounge бар в Северном Бутово (ул. Поляны 8, ТРК «Вива»). 40+ вкусов, VIP‑залы, PS5, авторская кухня. Работаем ежедневно 11:00–05:00.">
-  <meta name="keywords" content="кальянная Северное Бутово, кальян Москва, hookah lounge Медиссон, кальян круглосуточно Юг Москвы, VIP кальян Бутово">
-  <meta name="yandex-verification" content="XXXXX"><!-- замените XXXXX на свой код -->
+  <title>Кальянная в Москве Medisson — премиум lounge в Северном Бутово | Топ кальянных Москвы</title>
+  <meta name="description" content="Лучшая кальянная в Москве — Medisson lounge. Премиальные кальяны, 40+ вкусов табака, VIP-залы с отдельным входом. Идеальное место для отдыха в Москве. Бронируйте столик: +7 968 968-00-02">
+  <meta name="keywords" content="кальянная в Москве, лучшие кальянные Москвы, кальян Москва премиум, vip кальянная москва, кальянная северное бутово">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="assets/img/favicon.png">
-  <script defer src="https://mc.yandex.ru/metrika/tag.js"></script>
-  <script>try{ym(99999999,'init',{clickmap:true,trackLinks:true,webvisor:true});}catch(e){}</script>
-
-  <script type="application/ld+json">
-  {{
-   "@context":"https://schema.org",
-   "@type":"HookahBar",
-   "name":"Кальянная «Medisson»",
-   "url":"https://YOURUSERNAME.github.io/medisson-hookah/",
-   "telephone":"+7-968-968-00-02",
-   "image":"https://YOURUSERNAME.github.io/medisson-hookah/assets/img/hero.webp",
-   "priceRange":"₽₽",
-   "address":{{"@type":"PostalAddress",
-     "streetAddress":"ул. Поляны 8, ТРК «Вива», 1 этаж",
-     "addressLocality":"Москва",
-     "postalCode":"117042",
-     "addressCountry":"RU"}},
-   "geo":{{"@type":"GeoCoordinates","latitude":55.5464,"longitude":37.5401}},
-   "openingHoursSpecification":[{{"@type":"OpeningHoursSpecification",
-      "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens":"11:00","closes":"05:00"}}]
-  }}
-  </script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
   <style>
-    /* Reset + base */
-    *{{box-sizing:border-box}}
-    body{{margin:0;font-family:'Inter',Arial,sans-serif;color:#222;line-height:1.6}}
-    a{{color:#c0392b;text-decoration:none}}
-    h1,h2,h3{{margin:0 0 .6rem}}
-    img{{max-width:100%;display:block}}
-    /* Hero */
-    header{{background:url(assets/img/hero.webp) center/cover;height:65vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;padding:0 1rem}}
-    header .lead{{font-size:1.1rem;max-width:560px;margin-top:.8rem}}
-    .btn{{display:inline-block;background:#c0392b;color:#fff;padding:.8rem 1.8rem;border-radius:8px;margin-top:1.2rem}}
-    /* Nav */
-    nav ul{{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;padding:1rem;margin:0;list-style:none;background:#fafafa}}
-    nav a{{color:#333;font-weight:500}}
-    /* Sections */
-    section{{padding:3rem 1rem;max-width:960px;margin:auto}}
-    .card{{display:flex;gap:1.5rem;margin-bottom:2rem;align-items:center}}
-    .card img{{width:170px;border-radius:10px;flex-shrink:0}}
-    @media(max-width:680px){{.card{{flex-direction:column}}.card img{{width:100%;max-width:320px}}}}
-    footer{{background:#f4f4f4;text-align:center;font-size:.9rem;padding:1.2rem}}
+    :root {
+      --primary: #e74c3c;
+      --primary-dark: #c0392b;
+      --secondary: #2c3e50;
+      --accent: #f1c40f;
+      --text: #2d3436;
+      --text-light: #636e72;
+      --bg: #f8f9fa;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--bg);
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Типография */
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 3rem;
+      position: relative;
+      padding-bottom: 1.5rem;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    /* Хедер */
+    .header {
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+                  url(assets/img/hero.webp) center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: var(--white);
+      position: relative;
+    }
+
+    .header-content {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .lead {
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+      line-height: 1.8;
+    }
+
+    /* Навигация */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      transition: transform 0.3s ease;
+    }
+
+    .nav.hidden {
+      transform: translateY(-100%);
+    }
+
+    .nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 1.5rem 0;
+      gap: 3rem;
+    }
+
+    .nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      padding: 0.5rem 0;
+    }
+
+    .nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--primary);
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+
+    .nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    /* Секции */
+    .section {
+      padding: 8rem 0;
+      text-align: center;
+    }
+
+    .section-content {
+      margin-top: 4rem;
+    }
+
+    /* Карточки */
+    .card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      background: var(--white);
+      border-radius: 20px;
+      padding: 3rem;
+      margin-bottom: 4rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover img {
+      transform: scale(1.03);
+    }
+
+    .card-content {
+      text-align: left;
+    }
+
+    .card-content h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-content p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .feature {
+      background: var(--white);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature p {
+      color: var(--text-light);
+    }
+
+    /* Кнопки */
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--white);
+      padding: 1.2rem 3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      border: 2px solid var(--primary);
+    }
+
+    .btn:hover {
+      background: transparent;
+      color: var(--primary);
+    }
+
+    .btn.secondary {
+      background: var(--secondary);
+      border-color: var(--secondary);
+    }
+
+    .btn.secondary:hover {
+      background: transparent;
+      color: var(--secondary);
+    }
+
+    /* Контакты */
+    .contacts {
+      background: linear-gradient(135deg, var(--secondary) 0%, #1a1d1e 100%);
+      color: var(--white);
+      border-radius: 30px;
+      padding: 4rem 2rem;
+      margin-top: 4rem;
+    }
+
+    .contacts h2::after {
+      background: var(--white);
+    }
+
+    .contact-info {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    .contact-info p {
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info a {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    /* Футер */
+    .footer {
+      background: var(--secondary);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    /* Медиа запросы */
+    @media (max-width: 992px) {
+      .card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .card-content {
+        text-align: center;
+      }
+
+      .nav ul {
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        padding: 4rem 0;
+      }
+
+      .contacts {
+        border-radius: 20px;
+        padding: 3rem 1.5rem;
+      }
+    }
+
+    /* Анимации */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
   </style>
 </head>
+
 <body>
+  <header class="header" id="top">
+    <div class="header-content">
+      <h1>Премиальная кальянная<br>в Москве</h1>
+      <p class="lead">Medisson — атмосферное пространство для ценителей кальянной культуры. Изысканные вкусы, профессиональные мастера и первоклассный сервис в самом сердце столицы.</p>
+      <a href="#booking" class="btn">Забронировать стол</a>
+    </div>
+  </header>
 
-<header id="top">
-  <h1>Кальянная «Medisson» в Северном Бутово</h1>
-  <p class="lead">Уютный hookah &amp; gastro lounge на&nbsp;юге Москвы: 40&nbsp;вкусов, VIP‑залы, PlayStation&nbsp;5, авторская кухня и&nbsp;дымная атмосфера до&nbsp;5&nbsp;утра.</p>
-  <a class="btn" href="https://medisson.ru" target="_blank" rel="noopener">Перейти на основной сайт</a>
-</header>
+  <nav class="nav">
+    <ul>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#features">Преимущества</a></li>
+      <li><a href="#flavors">Вкусы</a></li>
+      <li><a href="#vip">VIP‑залы</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <ul>
-    <li><a href="#about">О нас</a></li>
-    <li><a href="#flavors">Вкусы</a></li>
-    <li><a href="#vip">VIP‑залы</a></li>
-    <li><a href="#contacts">Контакты</a></li>
-  </ul>
-</nav>
+  <section class="section" id="about">
+    <div class="container">
+      <h2>Лучшая кальянная в Москве</h2>
+      <div class="section-content">
+        <div class="card">
+          <img src="assets/img/lounge.webp" alt="Интерьер премиальной кальянной Medisson">
+          <div class="card-content">
+            <h3>Атмосфера роскоши и комфорта</h3>
+            <p>Добро пожаловать в Medisson — место, где создается особая атмосфера для вашего отдыха. Просторные залы с панорамными окнами, стильный интерьер и внимание к каждой детали создают идеальное пространство для отдыха в самом сердце Москвы.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="about">
-  <h2>Лаунж‑пространство для встреч, отдыха и событий</h2>
-  <div class="card">
-    <img src="assets/img/lounge.webp" alt="Интерьер кальянной Medisson Северное Бутово">
-    <p>Мы расположены в&nbsp;ТЦ&nbsp;«Вива» на ул.&nbsp;Поляны&nbsp;8. Два просторных зала c&nbsp;панорамными окнами и&nbsp;две приватные комнаты позволяют одинаково комфортно провести
-    вечер вдвоём, в&nbsp;компании друзей или отметить важное событие. Большие экраны транслируют спорт, а&nbsp;гостям доступны настольные игры и&nbsp;PS5.</p>
-  </div>
-</section>
+  <section class="section" id="features">
+    <div class="container">
+      <h2>Почему выбирают нас</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">🌟</div>
+          <h3>Premium кальяны</h3>
+          <p>Эксклюзивные кальяны и аксессуары от лучших мировых производителей</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">👨‍🍳</div>
+          <h3>Мастера своего дела</h3>
+          <p>Профессиональные кальянные мастера с многолетним опытом</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🎮</div>
+          <h3>Развлечения</h3>
+          <p>PlayStation 5, настольные игры и спортивные трансляции</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⭐</div>
+          <h3>Премиум сервис</h3>
+          <p>Персональный подход и безупречный сервис для каждого гостя</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="flavors">
-  <h2>40+ вкусов премиальных табаков</h2>
-  <div class="card">
-    <img src="assets/img/flavors.webp" alt="Вкусы кальяна Dark Side Must Have Tangiers">
-    <p>Мы работаем с&nbsp;Dark Side, Must&nbsp;Have, Tangiers и&nbsp;другими топ‑брендами. Мастера подбирают авторские
-    миксы под ваше настроение&nbsp;— от&nbsp;классики до&nbsp;экзотики. Фруктовые чаши, молочные и&nbsp;безникотиновые варианты доступны по запросу.</p>
-  </div>
-</section>
+  <section class="section" id="flavors">
+    <div class="container">
+      <h2>Премиальные вкусы</h2>
+      <div class="section-content">
+        <div class="card">
+          <img src="assets/img/flavors.webp" alt="Премиальные табаки для кальяна">
+          <div class="card-content">
+            <h3>Более 40 авторских вкусов</h3>
+            <p>Мы работаем только с лучшими брендами: Dark Side, Must Have, Tangiers. Наши мастера создают уникальные миксы и подбирают вкусы под ваши предпочтения. От классических фруктовых до эксклюзивных авторских композиций.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="vip">
-  <h2>VIP‑комнаты с PS5 и полным обслуживанием</h2>
-  <div class="card">
-    <img src="assets/img/vip.webp" alt="VIP комната Medisson с PlayStation 5">
-    <p>Для приватных вечеринок мы предлагаем две VIP‑комнаты: отдельный вход, контролируемый звук, индивидуальный
-    сервис. Здесь удобно проводить дни рождения, корпоративы, просмотры матчей или просто отдыхать без лишних глаз.</p>
-  </div>
-</section>
+  <section class="section" id="vip">
+    <div class="container">
+      <h2>VIP-залы премиум класса</h2>
+      <div class="section-content">
+        <div class="card">
+          <img src="assets/img/vip.webp" alt="VIP кальянная комната">
+          <div class="card-content">
+            <h3>Приватное пространство</h3>
+            <p>Роскошные VIP-комнаты с отдельным входом и персональным обслуживанием. Идеальное место для особых случаев, деловых встреч или уединенного отдыха. Каждый зал оборудован системой вентиляции последнего поколения и профессиональной аудиосистемой.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="contacts">
-  <h2>Как добраться</h2>
-  <p><strong>Адрес:</strong> Москва, Северное Бутово, ул.&nbsp;Поляны&nbsp;8, ТРК «Вива», 1 этаж.<br>
-     <strong>Часы работы:</strong> ежедневно 11:00–05:00.<br>
-     <strong>Метро:</strong> Бульвар&nbsp;Дмитрия&nbsp;Донского / Улица Старокачаловская.<br>
-     <strong>Телефон:</strong> <a href="tel:+79689680002">+7&nbsp;968&nbsp;968‑00‑02</a></p>
-  <p><a class="btn" style="background:#16a085" href="https://yandex.ru/maps/org/medisson/127520054492/" target="_blank" rel="noopener">Открыть в Яндекс Картах</a></p>
-</section>
+  <section class="section" id="contacts">
+    <div class="container">
+      <div class="contacts">
+        <h2>Как нас найти</h2>
+        <div class="contact-info">
+          <p><strong>Адрес:</strong> Москва, Северное Бутово, ул. Поляны 8, ТРК «Вива», 1 этаж</p>
+          <p><strong>Режим работы:</strong> ежедневно 11:00–05:00</p>
+          <p><strong>Метро:</strong> Бульвар Дмитрия Донского / Улица Старокачаловская</p>
+          <p><strong>Телефон:</strong> <a href="tel:+79689680002">+7 968 968‑00‑02</a></p>
+        </div>
+        <a class="btn secondary" href="https://yandex.ru/maps/org/medisson/127520054492/" target="_blank" rel="noopener">Построить маршрут</a>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  © 2025 Medisson Hookah&nbsp;Lounge · Все права защищены
-</footer>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Medisson — Премиальная кальянная в Москве · Все права защищены</p>
+    </div>
+  </footer>
 
+  <script>
+    // Скрытие навигации при прокрутке
+    let lastScroll = 0;
+    const nav = document.querySelector('.nav');
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > lastScroll && currentScroll > 200) {
+        nav.classList.add('hidden');
+      } else {
+        nav.classList.remove('hidden');
+      }
+      
+      lastScroll = currentScroll;
+    });
+
+    // Анимация появления элементов
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.section-content, .features, .contacts').forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
