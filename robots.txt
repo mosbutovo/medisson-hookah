@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://YOURUSERNAME.github.io/medisson-hookah/sitemap.xml
+Host: YOURUSERNAME.github.io
